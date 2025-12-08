@@ -26,6 +26,7 @@ func main() {
 
 	// Bisa auto detect length nya tapi pas di awal aja
 	// gk bisa di tambah" lagi tetep
+	// -> composite literal
 	var newValues = [...]int{
 		10,
 		20,
@@ -34,4 +35,16 @@ func main() {
 	}
 
 	fmt.Println(newValues)
+
+	// Ini bukan array btw, ini slice yang langsung ada isi nya
+	var newValuesSlice = []int{
+		20,
+		30,
+		40,
+		50,
+	}
+
+	fmt.Println(newValuesSlice)
+	fmt.Println(len(newValuesSlice))
+	fmt.Println(cap(newValuesSlice))
 }
